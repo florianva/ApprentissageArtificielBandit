@@ -1,12 +1,12 @@
 import math as m
 
 
-def UCB(iterations, tabMachines):
+def UCB(iterations, tabMachines, k):
 
     nbTirages = []
     SommeGains = []
     #Plus K est grand plus on explore, plus il est petit plus on exploite
-    K = 1
+    K = k
     gainTotal = 0
 
     for i in range(len(tabMachines)):
